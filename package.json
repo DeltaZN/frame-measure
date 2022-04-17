@@ -1,0 +1,28 @@
+{
+  "name": "perf-util",
+  "scripts": {
+    "test": "ts-node --project ./tsconfig.node.json ./src/perf-test.ts --url=http://localhost:3002/core/last-candle-update"
+  },
+  "dependencies": {
+    "glob": "^7.2.0",
+    "jest": "^27.5.1",
+    "minimist": "^1.2.5",
+    "mocha": "^9.1.3",
+    "puppeteer": "^13.3.2",
+    "puppeteer-extra": "^3.2.3",
+    "ts-jest": "^24.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "12.6.8",
+    "@types/puppeteer": "^5.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^7.32.0",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "packageManager": "yarn@3.1.0"
+}
