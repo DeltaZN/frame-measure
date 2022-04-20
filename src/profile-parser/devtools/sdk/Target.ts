@@ -23,6 +23,8 @@ export class Target extends TargetBase {
         parentTarget: Target|null, sessionId: string, suspended: boolean,
         connection: Connection|null,
         targetInfo?: TargetInfo) {
+        // @ts-ignore
+        super();
         const needsNodeJSPatching = type === Type.Node;
         super(needsNodeJSPatching, parentTarget, sessionId, connection);
         // this.#targetManagerInternal = targetManager;

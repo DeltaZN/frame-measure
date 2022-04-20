@@ -12,7 +12,7 @@ export class DevToolsAPIWrapper {
     private readonly _perfModel: PerformanceModel;
     private readonly _frames: TimelineFrame[];
 
-    constructor(events: any) {
+    constructor(events: {traceEvents: EventPayload[]} | EventPayload[]) {
         const _events = importTraceEvents(events);
         const tracingModelBackingStorage = new BackingStorage();
         this._tracingModel = new TracingModel(tracingModelBackingStorage);
@@ -93,7 +93,7 @@ function isTraceEventObject(
     return isTraceEventList(maybeTraceEventObject['traceEvents'])
 }
 
-export function importTraceEvents(
+function importTraceEvents(
     rawProfile: {traceEvents: EventPayload[]} | EventPayload[],
 ): EventPayload[] {
     if (isTraceEventObject(rawProfile)) {
