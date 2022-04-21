@@ -17,5 +17,23 @@
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
   },
-  "packageManager": "yarn@3.1.0"
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@3.1.0",
+  "description": "You can use this tool for metrics extraction from Chrome Devtools performance profile.",
+  "main": "index.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeltaZN/frame-measure.git"
+  },
+  "keywords": [
+    "performance"
+  ],
+  "author": "Georgii Savin",
+  "bugs": {
+    "url": "https://github.com/DeltaZN/frame-measure/issues"
+  },
+  "homepage": "https://github.com/DeltaZN/frame-measure#readme"
 }

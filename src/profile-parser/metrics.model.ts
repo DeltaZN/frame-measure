@@ -58,7 +58,7 @@ export function getCPUStats(events: TracingModelEvent[], startTime: number, endT
     };
 }
 
-interface FramesStats {
+export interface FramesStats {
     avgFPS: number;
     droppedFrames: number;
     longestFrameTime: number;
