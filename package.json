@@ -1,6 +1,6 @@
 {
   "name": "@perf-util/frame-measure",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "scripts": {
     "clean": "tsc --build --clean",
@@ -8,6 +8,9 @@
     "publish-lib": "yarn build && npm publish"
   },
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "devDependencies": {
     "@types/node": "^17.0.25",
     "@typescript-eslint/eslint-plugin": "^5.6.0",

@@ -15,7 +15,7 @@ in consumable format.
 
 ```js
 
-import { DevToolsAPIWrapper } from '@perf-util/frame-measure';
+import { DevToolsAPIWrapper } from '@perf-util/frame-measure/dist';
 
 const data = require('/path/to/raw/timeline/json/file');
 
